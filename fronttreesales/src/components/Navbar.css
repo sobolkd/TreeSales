@@ -1,0 +1,31 @@
+.custom-navbar {
+    width: 100%;
+    position: center;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white !important;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+  }
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/UAFMemory-Black.otf') format('woff2'),
+         url('../fonts/UAFMemory-Black.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont', Arial, sans-serif;
+}

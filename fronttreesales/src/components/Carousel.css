@@ -1,0 +1,53 @@
+.carousel-container {
+    width: 90%; 
+    margin: auto;
+    
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .slide img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  .category-button {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    bottom: 20px;
+    width: 200px;
+    background-color: white;
+    color:black; 
+    padding: 10px 0; 
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  
+  .category-description {
+    margin:auto;
+    text-align: center;
+    bottom: 50px;
+    color: white;
+    text-align: center;
+    max-width: 90%;
+  }
+.slick-prev:before, .slick-next:before {
+    color: white;
+    font-size: 20x;
+  }
+
+  .slick-dots li button:before {
+    color: white;
+    font-size: 20x;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: white; 
+    font-size: 20x;
+  }
