@@ -12,8 +12,8 @@ const categories = [
   },
   {
     image: '/Images/yalynka.png',
-    category: 'ЯЛИНКИ',
-    description: 'Вишукані ялинки, які додають вашому саду елегантності і створюють затишну атмосферу зелені',
+    category: 'ЯЛИНИ',
+    description: 'Вишукані ялини, які додають вашому саду елегантності і створюють затишну атмосферу зелені',
   },
   {
     image: '/Images/sosna.png',
@@ -32,17 +32,17 @@ const categories = [
   },
   {
     image: '/Images/instrument.png',
-    category: 'Інструменти',
+    category: 'ІНСТРУМЕНТИ',
     description: 'Інструменти, які забезпечують зручність і ефективність у догляді за вашим садом',
   },
   {
     image: '/Images/dobryva.png',
-    category: 'Добрива',
+    category: 'ДОБРИВА',
     description: 'Поживні речовини, які підтримують здоровий ріст і розвиток вашого саду, роблячи його ще більш привабливим і живучим',
   },
   {
     image: '/Images/zemlya.png',
-    category: 'Ґрунт',
+    category: 'ҐРУНТ',
     description: 'Найкращий, високоякісний ґрунт для вашого саду, щоб забезпечити чудовий ріст рослин!',
   },
 ];
@@ -51,7 +51,7 @@ const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,

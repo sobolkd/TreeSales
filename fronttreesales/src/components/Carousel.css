@@ -1,7 +1,7 @@
 .carousel-container {
     width: 90%; 
     margin: auto;
-    
+    margin-top: 60px;
   }
   
   .slide {
@@ -28,7 +28,6 @@
     border-radius: 10px;
   }
   
-  
   .category-description {
     margin:auto;
     text-align: center;
@@ -37,7 +36,8 @@
     text-align: center;
     max-width: 90%;
   }
-.slick-prev:before, .slick-next:before {
+
+  .slick-prev:before, .slick-next:before {
     color: white;
     font-size: 20x;
   }

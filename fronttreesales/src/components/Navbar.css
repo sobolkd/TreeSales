@@ -1,31 +1,87 @@
-.custom-navbar {
-    width: 100%;
-    position: center;
-    top: 0;
-    z-index: 1000;
-    background-color: black;
-  }
-  
-  .navbar-brand, .nav-link {
-    color: white !important;
-    font-size: 24px;
-    margin: 10px;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content:space-around;
-    width: 100%;
-  }
-  @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../fonts/UAFMemory-Black.otf') format('woff2'),
-         url('../fonts/UAFMemory-Black.otf') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/UAFMemory-Black.otf') format('woff2'),
+       url('../fonts/UAFMemory-Black.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'MyCustomFont', Arial, sans-serif;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  background-color: white;
+}
+
+.custom-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  background-color: black;
+  overflow: hidden;
+  border-bottom: 2px solid grey;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+  font-size: 16px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 4s ease-out;
+}
+
+.nav-link {
+  color: white !important;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  background-color: #ffffff;
+  color: black !important;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.leaf {
+  position: absolute;
+  top: -20px;
+  width: 200px;
+  height: 200px;
+  background-image: url('../Images/plant.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fall linear infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    top: -20px;
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3; 
+  }
+  90% {
+    transform: rotate(360deg);
+    opacity: 0.6; 
+  }
+  100% {
+    top: 100%;
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }

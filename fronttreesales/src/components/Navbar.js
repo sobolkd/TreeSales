@@ -1,18 +1,70 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import '../components/Navbar.css'; 
+import '../components/Navbar.css';
 
 const NavigationBar = () => {
+  useEffect(() => {
+    let leafCount = 0;
+    const maxLeaves = 2;
+
+    const createLeaf = () => {
+      if (leafCount >= maxLeaves) return;
+
+      const leaf = document.createElement('div');
+      leaf.className = 'leaf';
+      
+      const randomPosition = Math.random();
+      if (randomPosition < 0.33) {
+        leaf.style.top = '-20px';
+        leaf.style.left = `${Math.random() * 100}%`;
+      } else if (randomPosition < 0.66) {
+        leaf.style.left = '-20px';
+        leaf.style.top = `${Math.random() * 100}%`;
+      } else {
+        leaf.style.right = '-20px';
+        leaf.style.top = `${Math.random() * 100}%`;
+      }
+
+      const duration = Math.random() * 5 + 5;
+      leaf.style.animationDuration = `${duration}s`;
+
+      const direction = Math.random() < 0.5 ? -1 : 1;
+      leaf.style.animationDirection = direction === -1 ? 'reverse' : 'normal';
+
+      const rotation = Math.random() * 360 + 180;
+      leaf.style.transform = `rotate(${rotation}deg)`;
+
+      // Додаємо листок в DOM
+      document.querySelector('.custom-navbar').appendChild(leaf);
+
+      setTimeout(() => {
+        leaf.classList.add('fade-out');
+      }, 100); 
+
+      leaf.addEventListener('animationend', () => {
+        leaf.remove();
+        leafCount--;
+      });
+      leafCount++;
+    };
+
+    const leafInterval = setInterval(createLeaf, 500);
+
+    return () => clearInterval(leafInterval);
+  }, []);
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="w-100 custom-navbar">
       <Container>
         <Navbar.Brand href="#home">РостиЗростай</Navbar.Brand>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto nav-links">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#home">Головна</Nav.Link>
+            <Nav.Link href="#categories">Категорії</Nav.Link>
+            <Nav.Link href="#order">Замовлення</Nav.Link>
+            <Nav.Link href="#account">Аккаунт</Nav.Link>
+            <Nav.Link href="#contact">Зв'язок</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
