@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../components/Navbar.css';
 
 const NavigationBar = () => {
@@ -12,7 +13,7 @@ const NavigationBar = () => {
 
       const leaf = document.createElement('div');
       leaf.className = 'leaf';
-      
+
       const randomPosition = Math.random();
       if (randomPosition < 0.33) {
         leaf.style.top = '-20px';
@@ -34,12 +35,11 @@ const NavigationBar = () => {
       const rotation = Math.random() * 360 + 180;
       leaf.style.transform = `rotate(${rotation}deg)`;
 
-      // Додаємо листок в DOM
       document.querySelector('.custom-navbar').appendChild(leaf);
 
       setTimeout(() => {
         leaf.classList.add('fade-out');
-      }, 100); 
+      }, 100);
 
       leaf.addEventListener('animationend', () => {
         leaf.remove();
@@ -56,15 +56,15 @@ const NavigationBar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="w-100 custom-navbar">
       <Container>
-        <Navbar.Brand href="#home">РостиЗростай</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home">РостиЗростай</Navbar.Brand>
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto nav-links">
-            <Nav.Link href="#home">Головна</Nav.Link>
-            <Nav.Link href="#categories">Категорії</Nav.Link>
-            <Nav.Link href="#order">Замовлення</Nav.Link>
-            <Nav.Link href="#account">Аккаунт</Nav.Link>
-            <Nav.Link href="#contact">Зв'язок</Nav.Link>
+            <Nav.Link as={Link} to="/home">Головна</Nav.Link>
+            <Nav.Link as={Link} to="/categories">Категорії</Nav.Link>
+            <Nav.Link as={Link} to="/order">Замовлення</Nav.Link>
+            <Nav.Link as={Link} to="/account">Аккаунт</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Зв'язок</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
