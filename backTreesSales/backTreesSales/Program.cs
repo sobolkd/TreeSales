@@ -3,7 +3,14 @@ using backTreesSales.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Додайте сервіс для контексту бази даних
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:3000")
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -19,7 +26,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors("AllowSpecificOrigin");
+
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+app.Urls.Add("http://localhost:7087");
+
 app.Run();

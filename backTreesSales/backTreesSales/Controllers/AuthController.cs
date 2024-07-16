@@ -1,40 +1,40 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using backTreesSales.Models;
-using backTreesSales.Data;
+﻿    using Microsoft.AspNetCore.Mvc;
+    using backTreesSales.Models;
+    using backTreesSales.Data;
 
-namespace backTreesSales.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuthController : ControllerBase
+    namespace backTreesSales.Controllers
     {
-        private readonly ApplicationDbContext _context;
-
-        public AuthController(ApplicationDbContext context)
+        [Route("api/[controller]")]
+        [ApiController]
+        public class AuthController : ControllerBase
         {
-            _context = context;
-        }
+            private readonly ApplicationDbContext _context;
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegistrationModel model)
-        {
-            if (model == null || !ModelState.IsValid)
+            public AuthController(ApplicationDbContext context)
             {
-                return BadRequest("Invalid registration details.");
+                _context = context;
             }
 
-            var user = new User
+            [HttpPost("register")]
+            public async Task<IActionResult> Register([FromBody] RegistrationModel model)
             {
-                email = model.Email,
-                password = model.Password,
-                user_name = model.Username,
-                user_pastname = model.UserPastname
-            };
+                if (model == null || !ModelState.IsValid)
+                {
+                    return BadRequest("Invalid registration details.");
+                }
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+                var user = new User
+                {
+                    email = model.Email,
+                    password = model.Password,
+                    user_name = model.Username,
+                    user_pastname = model.UserPastname
+                };
 
-            return Ok(new { message = "Registration successful" });
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
+                return Ok(new { message = "Registration successful" });
+            }
         }
     }
-}

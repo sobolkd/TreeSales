@@ -17,9 +17,9 @@ body {
   top: 0;
   z-index: 1000;
   height: 80px;
-  background-color: black;
+  background-color: #306B34;
   overflow: hidden;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #C3EB78;
 }
 
 .navbar-brand, .nav-link {

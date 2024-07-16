@@ -1,48 +1,114 @@
 import React, { useState } from 'react';
+import './Account.css';
 
 const Account = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showRegistrationForm, setShowRegistrationForm] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
 
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-    setShowRegistrationForm(false);
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    setShowRegistrationForm(false);
-  };
-
-  const handleShowRegistrationForm = () => {
-    setShowRegistrationForm(true);
-  };
-
-  const handleHideRegistrationForm = () => {
-    setShowRegistrationForm(false);
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('http://localhost:7087/api/auth/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          Username: formData.firstName,
+          Email: formData.email,
+          Password: formData.password,
+          UserPastname: formData.lastName, 
+        }),
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Network response was not ok');
+      }
+  
+      const data = await response.json();
+      console.log('Registration successful:', data);
+    } catch (error) {
+      console.error('Error during registration:', error);
+    }
+  };  
 
   return (
     <div className="account-container">
-      {!isLoggedIn && (
-        <button onClick={handleLogin}>Авторизований</button>
-      )}
-      {!isLoggedIn && (
-        <button onClick={handleShowRegistrationForm}>Не авторизований</button>
-      )}
-      {isLoggedIn && (
-        <div>
-          <p>Ви авторизовані. Тут може бути текст Lorem Ipsum або інша інформація.</p>
-          <button onClick={handleLogout}>Вийти</button>
-        </div>
-      )}
-      {showRegistrationForm && (
-        <div>
-          <h2>Форма реєстрації</h2>
-          {/* Додайте тут форму реєстрації */}
-          <button onClick={handleHideRegistrationForm}>Сховати форму</button>
-        </div>
-      )}
+      <div className="register-form-container">
+        <h2>Register</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
   );
 };

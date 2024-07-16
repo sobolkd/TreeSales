@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\SiteTreeSales\\backTreesSales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|C:\\Projects\\SiteTreeSales\\backTreesSales\\backtreessales\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|solutionrelative:backtreessales\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{454524B3-7405-4D55-98B9-CD3209F9945A}|backTreesSales\\backTreesSales.csproj|c:\\projects\\sitetreesales\\backtreessales\\backtreessales\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,79 +31,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegistrationModel.cs",
-              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\RegistrationModel.cs",
-              "RelativeDocumentMoniker": "backTreesSales\\Models\\RegistrationModel.cs",
-              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\RegistrationModel.cs",
-              "RelativeToolTip": "backTreesSales\\Models\\RegistrationModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T14:41:09.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\appsettings.json",
-              "RelativeDocumentMoniker": "backTreesSales\\appsettings.json",
-              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\appsettings.json",
-              "RelativeToolTip": "backTreesSales\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-15T14:30:45.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\User.cs",
-              "RelativeDocumentMoniker": "backTreesSales\\Models\\User.cs",
-              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\User.cs",
-              "RelativeToolTip": "backTreesSales\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T14:25:29.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "backTreesSales\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "backTreesSales\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T14:19:43.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "backTreesSales\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "backTreesSales\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T13:59:19.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Program.cs",
               "RelativeDocumentMoniker": "backTreesSales\\Program.cs",
               "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Program.cs",
               "RelativeToolTip": "backTreesSales\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T13:46:56.774Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\User.cs",
+              "RelativeDocumentMoniker": "backTreesSales\\Models\\User.cs",
+              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\User.cs",
+              "RelativeToolTip": "backTreesSales\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T19:29:02.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrationModel.cs",
+              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\RegistrationModel.cs",
+              "RelativeDocumentMoniker": "backTreesSales\\Models\\RegistrationModel.cs",
+              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Models\\RegistrationModel.cs",
+              "RelativeToolTip": "backTreesSales\\Models\\RegistrationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T19:29:01.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backTreesSales\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backTreesSales\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T18:58:24.991Z",
               "EditorCaption": ""
             }
           ]
