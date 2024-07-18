@@ -16,35 +16,52 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  height: 80px;
-  background-color: #306B34;
+  height: 100px;
+  background-color: #C3EB78;
   overflow: hidden;
   border-bottom: 2px solid #C3EB78;
 }
 
+.top-rectangle {
+  width: 100%;
+  height: 40px; 
+  background-color: #306B34;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  vertical-align: center;
+}
+
 .navbar-brand, .nav-link {
-  color: white !important;
+  color: black !important;
   font-size: 16px;
   margin: 5px;
   text-decoration: none;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 4s ease-out;
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 45px;
 }
 
 .nav-link {
-  color: white !important;
+  color: black !important;
   background-color: transparent;
   padding: 10px 20px;
   border-radius: 5px;
+  border-color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {
   background-color: #ffffff;
   color: black !important;
+  border-color: black;
 }
 
 .nav-links {
@@ -55,33 +72,38 @@ body {
 
 .leaf {
   position: absolute;
-  top: -20px;
-  width: 200px;
+  width:200px;
   height: 200px;
   background-image: url('../Images/plant.png');
   background-size: contain;
   background-repeat: no-repeat;
-  animation: fall linear infinite;
-  opacity: 0;
-  pointer-events: none;
 }
 
-@keyframes fall {
-  0% {
-    top: -20px;
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.3; 
-  }
-  90% {
-    transform: rotate(360deg);
-    opacity: 0.6; 
-  }
-  100% {
-    top: 100%;
-    transform: rotate(360deg);
-    opacity: 0;
-  }
+.left-leaf {
+  left: 400px; 
+  top: -10px; 
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+.left2-leaf {
+  left: -70px; 
+  top: -20px; 
+  transform: rotate(70deg);
+  z-index: 0;
+}
+
+.right-leaf {
+  right: -90px; 
+  top: -60px; 
+  transform: rotate(300deg);
+}
+.right2-leaf {
+  right: 400px; 
+  top: -60px; 
+  transform: rotate(230deg);
+}
+
+.logo-text {
+  color: #F3FFC6;
+  font-size: 30px;
 }

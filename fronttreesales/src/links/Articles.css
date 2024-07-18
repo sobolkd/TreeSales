@@ -1,0 +1,17 @@
+.textmain {
+    color: #F3FFC6;
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+    text-align: center;
+    word-spacing: 0.2em;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+
+  

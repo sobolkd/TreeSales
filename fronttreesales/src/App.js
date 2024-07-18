@@ -5,6 +5,7 @@ import NavigationBar from './components/Navbar';
 import Home from './links/Home';
 import Contact from './links/Contact';
 import Account from './links/Account'; 
+import Articles from './links/Articles';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/account" element={<Account />} /> {/* Додайте маршрут для Account */}
+          <Route path="/account" element={<Account />} /> 
+          <Route path="/articles" element={<Articles />} />
           {/* Додайте інші маршрути тут */}
         </Routes>
       </div>
