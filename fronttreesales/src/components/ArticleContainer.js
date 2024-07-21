@@ -1,7 +1,8 @@
+// src/components/ArticleContainer.js
 import React from 'react';
 import './ArticleContainer.css';
 
-const ArticleContainer = ({ title, date, shortText, fullText, onClick }) => {
+const ArticleContainer = ({ title, date, shortText, onClick }) => {
   return (
     <div className='article-container' onClick={onClick}>
       <div className='article-header'>
@@ -9,7 +10,6 @@ const ArticleContainer = ({ title, date, shortText, fullText, onClick }) => {
         <span>{date}</span>
       </div>
       <p>{shortText}</p>
-      <p>{fullText}</p>
     </div>
   );
 }

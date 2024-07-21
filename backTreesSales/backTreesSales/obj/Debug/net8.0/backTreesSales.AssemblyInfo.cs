@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("backTreesSales")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f9c22f36840f69fab6987ce91fcc58afce68ed8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b766b98a9fd324ae02d5dec5f8301b797fdbf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("backTreesSales")]
 [assembly: System.Reflection.AssemblyTitleAttribute("backTreesSales")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

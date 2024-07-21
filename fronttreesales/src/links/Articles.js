@@ -1,10 +1,13 @@
+// src/pages/Articles.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Articles.css';
 import ArticleContainer from '../components/ArticleContainer';
+import FullArticleContainer from '../components/FullArticleContainer';
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
+  const [selectedArticle, setSelectedArticle] = useState(null);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -19,9 +22,24 @@ const Articles = () => {
     fetchArticles();
   }, []);
 
-  const handleClick = () => {
-    alert('Контейнер натиснуто!');
+  const handleArticleClick = (article) => {
+    setSelectedArticle(article);
   };
+
+  const handleBackClick = () => {
+    setSelectedArticle(null);
+  };
+
+  if (selectedArticle) {
+    return (
+      <FullArticleContainer
+        title={selectedArticle.title}
+        date={selectedArticle.date}
+        fullText={selectedArticle.fulltext}
+        onBack={handleBackClick}
+      />
+    );
+  }
 
   return (
     <div>
@@ -33,14 +51,12 @@ const Articles = () => {
       </p>
       {articles.map((article, index) => (
         <ArticleContainer 
-        key={index}
-        title={article.title} 
-        date={article.date} 
-        shortText={article.shorttext}  // Corrected prop name
-        fullText={article.fulltext}    // Make sure 'fullText' is included in your data
-        onClick={handleClick}
-      />
-      
+          key={index}
+          title={article.title} 
+          date={article.date} 
+          shortText={article.shorttext} 
+          onClick={() => handleArticleClick(article)}
+        />
       ))}
     </div>
   );
