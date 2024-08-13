@@ -1,0 +1,147 @@
+.create-article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F3FFC6;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  position: relative;
+}
+
+.create-article-container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  background-color: #C3EB78;
+  border-radius: 20px;
+}
+
+.create-article-container .button-group {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 20px; /* Відступ зверху */
+  right: 20px; /* Відступ справа */
+}
+
+.create-article-container .button-group button {
+  background-color: #B6174B;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; /* Між кнопками */
+  transition: background-color 0.3s ease;
+}
+
+.create-article-container .button-group button:hover {
+  background-color: #a00f3e;
+}
+
+.create-article-container div {
+  margin-bottom: 15px;
+}
+
+.create-article-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.create-article-container input,
+.create-article-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background-color: #C3EB78;
+  resize: none;
+}
+
+.create-article-container textarea {
+  height: 300px;
+}
+.edit-article-container {
+  width: 97%; 
+  height: 78vh; 
+  overflow: hidden; 
+  position: relative;
+  margin-top: 50px;
+  border: rgba(243, 255, 198, 0.8) 2px solid; 
+  background-color: rgba(195, 235, 120, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.edit-article-container h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  background-color: #C3EB78;
+  border-radius: 10px;
+  padding: 10px; 
+}
+
+.edit-article-container .button-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-article-container label {
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.edit-article-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background-color: #C3EB78;
+}
+
+.edit-article-container input,
+.edit-article-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background-color: #C3EB78;
+  resize: none;
+}
+
+.edit-article-container textarea {
+  height: 300px;
+}
+
+.edit-article-container button {
+  background-color: #B6174B;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.edit-article-container button:hover {
+  background-color: #a00f3e;
+}

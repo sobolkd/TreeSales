@@ -1,17 +1,140 @@
+.text-and-button {
+  text-align: center;
+}
+
 .textmain {
-    color: #F3FFC6;
-    text-shadow: 
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-      -1px  1px 0 #000,
-       1px  1px 0 #000;
-    text-align: center;
-    word-spacing: 0.2em;
-    line-height: 1.5;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+  color: #F3FFC6;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  text-align: center; 
+  word-spacing: 0.2em;
+  line-height: 1.5;
+  margin: 30px 20px; 
+}
+
+.edit-article-background {
+  background-image: radial-gradient(circle, #306B34, #C3EB78);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 0 auto;
+  min-height: 100vh; 
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
-  
+
+.editor-container {
+  width: 90%;
+  margin: 20px auto ;
+  padding: 20px;
+  background-color: rgba(195, 235, 120, 0.5); 
+  border-radius: 20px;
+  border: rgba(243, 255, 198, 0.8) 2px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.editor-form {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.editor-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.editor-title-input, .editor-textarea {
+  width: 100%;
+  padding: 10px;
+  border: rgba(243, 255, 198, 0.8) 2px solid;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background-color: #C3EB78;
+}
+
+.editor-title-input {
+  height: 40px; 
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+
+.create-article-button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #B6174B;
+  color: #F3FFC6;
+  border: 2px solid #F3FFC6;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.create-article-button:hover {
+  background-color: #a00f3e;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.editor-container button {
+  padding: 10px;
+  background-color: #B6174B;
+  color: #F3FFC6;
+  border: 2px solid #F3FFC6;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.editor-container button:hover {
+  background-color: #a00f3e;
+}

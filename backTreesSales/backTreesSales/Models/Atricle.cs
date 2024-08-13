@@ -1,13 +1,17 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace backTreesSales.Models
+public class articles
 {
-    public class articles
-    {
-        public int id { get; set; }
-        public string title { get; set; }
-        public DateTime date { get; set; }
-        public string shorttext { get; set; }
-        public string fulltext { get; set; }
-    }
+    public int id { get; set; }
+
+    [Required]
+    public string title { get; set; }
+
+    public DateTime date { get; set; }
+
+    [Required]
+    public string shorttext { get; set; }
+
+    [Required]
+    public string fulltext { get; set; }
 }

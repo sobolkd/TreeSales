@@ -6,6 +6,7 @@ import Home from './links/Home';
 import Contact from './links/Contact';
 import Account from './links/Account'; 
 import Articles from './links/Articles';
+import CreateArticle from './components/CreateArticle';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/account" element={<Account />} /> 
           <Route path="/articles" element={<Articles />} />
+          <Route path="/create-article" element={<CreateArticle />} />
           {/* Додайте інші маршрути тут */}
         </Routes>
       </div>

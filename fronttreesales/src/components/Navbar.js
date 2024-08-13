@@ -20,8 +20,8 @@ const NavigationBar = () => {
             <Nav.Link as={Link} to="/categories">Категорії</Nav.Link>
             <Nav.Link as={Link} to="/order">Замовлення</Nav.Link>
             <Nav.Link as={Link} to="/account">Аккаунт</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Зв'язок</Nav.Link>
             <Nav.Link as={Link} to="/articles">Статті</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Зв'язок</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

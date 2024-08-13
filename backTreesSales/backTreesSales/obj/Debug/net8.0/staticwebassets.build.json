@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "LC27gvECz1mb7bM/6oSKqhlSZEHKtkUOBiDqS0IFi3M=",
+  "Hash": "+RATBHSujIpaF/Zaml+mjttRJIq7aFDhSBf8GlRp9Qs=",
   "Source": "backTreesSales",
   "BasePath": "_content/backTreesSales",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "backTreesSales\\wwwroot",
+      "Source": "backTreesSales",
+      "ContentRoot": "C:\\Projects\\SiteTreeSales\\backTreesSales\\backTreesSales\\wwwroot\\",
+      "BasePath": "_content/backTreesSales",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

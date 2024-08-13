@@ -20,7 +20,6 @@ var app = builder.Build();
 
 app.UseCors("AllowSpecificOrigin");
 
-//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 

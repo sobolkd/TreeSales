@@ -20,7 +20,9 @@
             {
                 if (model == null || !ModelState.IsValid)
                 {
-                    return BadRequest("Invalid registration details.");
+                  Console.ForegroundColor = ConsoleColor.Red;
+                  Console.WriteLine("Error in AuthController. BAD REQUEST");
+                  return BadRequest("Invalid registration details.");
                 }
 
                 var user = new User
@@ -33,8 +35,9 @@
 
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
-
-                return Ok(new { message = "Registration successful" });
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine($"The user {user.email} has registered");
+            return Ok(new { message = "Registration successful" });
             }
         }
     }
